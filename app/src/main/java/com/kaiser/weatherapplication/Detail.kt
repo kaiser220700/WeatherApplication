@@ -62,15 +62,14 @@ class Detail : AppCompatActivity() {
 
         setActionBar()
 
-        prefDetail = getSharedPreferences("City", Context.MODE_PRIVATE)
-
-        val lat = prefDetail.getString("lat", " ")
-        val long = prefDetail.getString("long", " ")
-
-
-
+        prefDetail = getSharedPreferences("Current Location", Context.MODE_PRIVATE)
+        val lat = prefDetail.getString("current lat", " ")
+        val long = prefDetail.getString("current long", " ")
 
         getJsonData(lat,long)
+
+        prefDetail = getSharedPreferences("City", Context.MODE_PRIVATE)
+
     }
 
     private fun setActionBar() {
@@ -157,6 +156,8 @@ class Detail : AppCompatActivity() {
         val temp = current.getString("temp")
         val convert: Long = temp.toDouble().roundToLong()
         tvTemp?.text = "$convert°C"
+        // set unit
+        tvUnit?.text = "Celsius"
         //set humidity
         tvHumidity?.text = current.getString("humidity") + "%"
         //set uv
@@ -166,11 +167,8 @@ class Detail : AppCompatActivity() {
 
 
         prefDetail = getSharedPreferences("Degree", Context.MODE_PRIVATE)
-        val c = prefDetail.getString("Celsius", " ")
         val f = prefDetail.getString("Fahrenheit", " ")
         val check = prefDetail.getBoolean("Check", false)
-        if (check) tvUnit?.text = f
-        else tvUnit?.text = c
 
         if (check) {
             // set temp day
@@ -205,6 +203,8 @@ class Detail : AppCompatActivity() {
             val tempF = current.getString("temp")
             val convertF: Long = (tempF.toDouble().roundToLong() * 1.8.toLong()) + 32
             tvTemp?.text = "$convertF°F"
+            // set unit
+            tvUnit?.text = f
         }
     }
 }

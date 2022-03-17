@@ -77,6 +77,10 @@ class HomeActivity : AppCompatActivity() {
 
             getJsonData(newLat,newLong)
         }
+        llStatus?.setOnClickListener{
+            val intent = Intent(this, Detail::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -248,12 +252,6 @@ class HomeActivity : AppCompatActivity() {
             }
 
         }
-
-        llStatus?.setOnClickListener{
-            val intent = Intent(this, Detail::class.java)
-            startActivity(intent)
-        }
-
 
     }
 
