@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Weather Application</string>
+    <string name="cloud">cloud</string>
+    <string name="cloudy">cloudy</string>
+    <string name="dont_worry_about_the_weather_we_all_here">dont worry about the weather we all here</string>
+    <string name="enter_cities">Enter cities</string>
+    <string name="settings">Settings</string>
+    <string name="add_location">Add Location</string>
+    <string name="location">location</string>
+    <string name="current_location">Current Location</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="temp">temp</string>
+    <string name="pop">pop</string>
+    <string name="feels_like">Feels like</string>
+    <string name="status">status</string>
+    <string name="humidity">Humidity</string>
+    <string name="uv">uv</string>
+    <string name="windy">windy</string>
+    <string name="forecast">Forecast</string>
+    <string name="date">date</string>
+    <string name="current_temperature_unit">Current Temperature Unit</string>
+    <string name="degree_celsius_c">Degree Celsius °C</string>
+    <string name="degree_fahrenheit_f">Degree Fahrenheit °F</string>
+    <string name="unit">Unit</string>
+    <string name="details">Details</string>
+    <string name="pressure">Pressure</string>
+    <string name="uv_index">UV Index</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+</resources>

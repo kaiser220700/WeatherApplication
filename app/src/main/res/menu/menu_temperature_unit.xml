@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_temperature_unit_c"
+        android:title= "@string/degree_celsius_c"/>
+    <item android:id="@+id/menu_temperature_unit_f"
+        android:title= "@string/degree_fahrenheit_f" />
+</menu>
